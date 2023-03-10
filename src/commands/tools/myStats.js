@@ -136,9 +136,12 @@ module.exports = {
 
             let gain = 0;
             if (jobInfo.pri_name === s) {
-              if (empData[getTornID.torn_id]["effectiveness"]["total"] < 100) {
+              if (
+                empData[getTornID.torn_id]["effectiveness"]["total"] < 100
+              ) {
                 gain = Math.round(
-                  (empData[getTornID.torn_id]["effectiveness"]["total"] / 100) *
+                  (empData[getTornID.torn_id]["effectiveness"]["total"] /
+                    100) *
                     jobInfo.pri_gain
                 );
               } else {
@@ -147,9 +150,11 @@ module.exports = {
 
               return gain;
             } else if (jobInfo.sec_name === s) {
-              if (empData) {
+              if (
+                empData              ) {
                 gain = Math.round(
-                  (empData[getTornID.torn_id]["effectiveness"]["total"] / 100) *
+                  (empData[getTornID.torn_id]["effectiveness"]["total"] /
+                    100) *
                     jobInfo.sec_gain
                 );
               } else {
