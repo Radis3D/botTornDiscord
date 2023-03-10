@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require("discord.js");
 const { parse } = require("dotenv");
 const { UserKey, UserWork } = require("../../database/db_config");
+const fetch = require('cross-fetch')
 
 module.exports = {
   data: new SlashCommandBuilder()
