@@ -1,6 +1,7 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 const { UserKey } = require('../../database/db_config');
 const wait = require('node:timers/promises').setTimeout;
+const fetch = require('cross-fetch')
 
 module.exports = {
     data : new SlashCommandBuilder()
