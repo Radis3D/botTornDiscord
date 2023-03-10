@@ -11,7 +11,6 @@ const {
   Rating,
   Fitness,
 } = require("../../database/db_config");
-const { fetch } = require("node-fetch");
 
 module.exports = {
   data: new SlashCommandBuilder()
