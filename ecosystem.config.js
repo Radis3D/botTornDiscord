@@ -3,6 +3,6 @@ module.exports = {
     name: 'Bot Torn',
     namespace: 'Apps Bot',
     script: './src/bot.js',
-    watch: false
+    watch: true
   }]
 };
